@@ -18,13 +18,13 @@ As regras são políticas configuradas no cluster para garantir boas práticas d
 
    ![Criando nova regra](./img/1.4.4.png)
 
-6. Escolha um **template** para a regra desejada.
+6. Escolha o **template** customizável(**generic check**) no motor de busca ou filtro de criticidade para criar a regra.
 
    ![Escolha de Template](./img/1.5.5.png)
 
 7. É mostrada as opções de configurações do template, clique em **Select** para continuar ou em **Previous** para retornar ao menu anterior de escolha do template.
 
-   ![Opções de edição](./img/1.6.6.png)
+   ![Opções de edição](./img/3-correção-.png)
 
 8. Se precisar trocar o template após a escolha, clique em **Change Template**.
 
@@ -38,11 +38,14 @@ As regras são políticas configuradas no cluster para garantir boas práticas d
    - **Exclude Pattern Namespace**: Permite excluir namespaces específicos da aplicação da regra.
    - **Name**: Nome descritivo para a regra.
    - **Custom Message**: Mensagem que será exibida quando a regra for violada.
-
+   - **Kind**: O tipo de recurso Kubernetes ao qual a regra será aplicada (ex.: Pod, Deployment, Service).
+   - **Path**: Caminho específico no manifesto do recurso onde a regra será aplicada
+   - **Operator**: Operador lógico usado para avaliar a regra
+   - **Expected Value**: O valor esperado no campo definido pelo Path.
 
 10. Após revisar, clique em **Save**.
-![Confirmação de criação](./img/1.8.8.png)
-1.  Aguarde a mensagem **Item Created**, confirmando a criação da regra.
+![Confirmação de criação](./img/3.1-correcao.png)
+1.   Aguarde a mensagem **Item Created**, confirmando a criação da regra.
 ![Confirmação de criação](./img/1.9.9.png)
 
 ---
